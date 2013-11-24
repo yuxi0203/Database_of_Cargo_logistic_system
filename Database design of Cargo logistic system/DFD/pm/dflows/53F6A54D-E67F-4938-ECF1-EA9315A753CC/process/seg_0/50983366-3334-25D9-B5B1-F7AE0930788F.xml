@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Process class="oracle.dbtools.crest.model.design.process.Process" name="transmit to website" id="50983366-3334-25D9-B5B1-F7AE0930788F" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-04 00:16:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<primary>false</primary>
+<batchMinimumTransactions>1000</batchMinimumTransactions>
+<batchTimeUnit>Second</batchTimeUnit>
+<frequencyTimeUnit>Day</frequencyTimeUnit>
+<frequencyTimes>0</frequencyTimes>
+<interactiveLongestResponseTime>5</interactiveLongestResponseTime>
+<interactiveResponseTimeUnit>Second</interactiveResponseTimeUnit>
+<mode>Unknown</mode>
+<priority>Low</priority>
+<peakPeriodsString>000000000000000000000000</peakPeriodsString>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>进程编号</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>转换任务</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+</Process>

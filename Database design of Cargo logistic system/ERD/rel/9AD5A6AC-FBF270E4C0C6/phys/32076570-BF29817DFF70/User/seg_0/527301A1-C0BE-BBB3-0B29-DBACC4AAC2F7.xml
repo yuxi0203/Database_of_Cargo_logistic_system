@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="customer" id="527301A1-C0BE-BBB3-0B29-DBACC4AAC2F7" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:31:50 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<identifier>0576CD1B73EBC73C834B7F8673AD3C1C38</identifier>
+</UserOraclev10g>

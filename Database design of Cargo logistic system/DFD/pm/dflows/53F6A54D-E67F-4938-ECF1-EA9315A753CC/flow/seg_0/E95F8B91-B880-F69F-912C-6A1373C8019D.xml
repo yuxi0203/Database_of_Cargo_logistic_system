@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="Email notification" id="E95F8B91-B880-F69F-912C-6A1373C8019D" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-04 00:18:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>0357E674-CA39-9C51-ED01-8ACB0B1AF0AD</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>50983366-3334-25D9-B5B1-F7AE0930788F</sourceProcessObject>
+<targetProcessObject>0357E674-CA39-9C51-ED01-8ACB0B1AF0AD</targetProcessObject>
+</Flow>

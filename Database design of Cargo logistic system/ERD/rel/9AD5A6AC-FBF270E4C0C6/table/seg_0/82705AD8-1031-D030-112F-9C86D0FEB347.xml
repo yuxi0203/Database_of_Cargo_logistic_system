@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="82705AD8-1031-D030-112F-9C86D0FEB347" directorySegmentName="seg_0" name="System">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>System info: other search engine</commentInRDBMS>
+<generatorID>C092AC2E-F54B-50D5-BD90-3DB30A7240BA</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pkName>System PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="sys_num" id="39B715B7-928A-615C-64D0-4AFCF51D4D99">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>9F005AFB-3F3C-2607-7615-BE2716874D63</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="0F6E1515-001D-744F-D435-0B3B285F426E" name="System PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>09BC12C1-48B5-FAE8-1FE9-FAA372E56D45</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="39B715B7-928A-615C-64D0-4AFCF51D4D99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

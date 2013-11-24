@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="sensor info" id="2D6A1B8F-BE19-FEF6-4AE0-6908B75A7205" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-03 23:19:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>1CB36D15-6D26-CD10-5445-A7FB427EDB35</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>E970B318-AEFD-A41E-DEFC-DE394D22EE9D</sourceProcessObject>
+<targetProcessObject>1CB36D15-6D26-CD10-5445-A7FB427EDB35</targetProcessObject>
+</Flow>

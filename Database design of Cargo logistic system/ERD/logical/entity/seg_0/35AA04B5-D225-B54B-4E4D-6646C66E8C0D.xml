@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="35AA04B5-D225-B54B-4E4D-6646C66E8C0D" directorySegmentName="seg_0" name="customer">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<commentInRDBMS>This entity is constitute by sender and receiver</commentInRDBMS>
+<generatorID>FDA4B520-7889-4470-FE72-D428810E6331</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<pkName>customer PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>属性</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="social_num" id="6894BDDE-71A0-D896-2E15-E7A1F177222B">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>43FBD780-FD0A-635E-B03C-ECE5F3FD9C99</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<commentInRDBMS>social security number</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="sex" id="6CB902CA-8560-470C-87C9-B5480B5E5072">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>9AF7FB43-D59D-C835-9141-E28EDE49F2B7</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="address" id="1EB7CD42-6863-0186-3081-8047318DCD40">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>E3D46FB8-7035-E072-4394-064D74E3ACEE</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<commentInRDBMS>where the customer live</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="phone_num" id="B5A0070A-6DDE-56C9-D3FD-9B2DED2A24CA">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>C484E9A1-EEEA-7E58-9315-DE8579FC6972</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<commentInRDBMS>Cellphone numer</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="AUD_Regi_TMSTP" id="0227DFE5-6669-4C8F-E150-36C71EFED31C">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-03 02:46:46 UTC</createdTime>
+<generatorID>381BBBC3-EB53-4355-4641-FFA9AEDBBE45</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="order_num" id="C08F05B7-4392-B0DC-6DEC-2CE8919E9F9D">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-03 02:46:46 UTC</createdTime>
+<generatorID>453C3D56-A212-E609-5ABC-8FD4EEBE7FC5</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<referedAttribute>DC8DD97C-1667-AC58-7CD4-35360C201C52</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="2F4D199B-3A42-D66C-4DA3-41EFDC55E20D" name="customer PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:40:56 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6894BDDE-71A0-D896-2E15-E7A1F177222B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

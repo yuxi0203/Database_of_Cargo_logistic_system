@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="F307EF01-7429-CB47-84C7-CDC585D0AD2E" directorySegmentName="seg_0" name="steadable_equipment">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>reader equipment has two kinds: portable equipment and steadable equipment</commentInRDBMS>
+<generatorID>3ACA7B6A-98EE-B325-9900-8CEE45968061</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pkName>steadable_equipment PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="address" id="74F6E07B-E632-5571-3CF9-B9A20B1FBCC6">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>address where it located&lt;br/&gt;</commentInRDBMS>
+<generatorID>8F4CF816-3480-C518-077C-719404B88365</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="steadable_num" id="089099E1-E1DB-2BB3-2AC3-2BEB99CEDFDC">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>E506AAD3-0E36-2192-FEF9-BC7E588C5F6C</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="ip_address" id="84A3367C-C28A-D3FB-9A70-B3746CA6BED1">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<comment>special IP address of steadable equipment</comment>
+<commentInRDBMS>special IP address of steadable equipment</commentInRDBMS>
+<generatorID>96F01421-16A2-ABAC-480A-243989B9A8DE</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="manu_date" id="A0010613-1434-2B16-8E47-01254FAC0212">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<comment>when this equipment manufactured</comment>
+<commentInRDBMS>when this equipment manufactured</commentInRDBMS>
+<generatorID>0DF9F6A5-000A-7987-3D9C-A44AD2E0CB25</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="sys_num" id="8638431F-62FD-38B0-94C3-25AB7F125B4B">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<comment>FKey</comment>
+<generatorID>EA4E6DCC-2A67-FBA1-1E0B-160D7CE79777</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<delegate>39B715B7-928A-615C-64D0-4AFCF51D4D99</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DE3494F-13CF-6569-7FE8-D0326EFF5183" referredColumn="39B715B7-928A-615C-64D0-4AFCF51D4D99"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C44761A3-83D9-3834-DE77-11F1A143B912" name="steadable_equipment PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>91BD9707-D561-AB04-647B-8A7D2FC81960</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="089099E1-E1DB-2BB3-2AC3-2BEB99CEDFDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="442BB279-98A2-4BB7-E8A2-E78481A4C2F0" name="Relation_7">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>8E62A4D4-817A-B3BD-2581-E7BC81DC2475</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="8638431F-62FD-38B0-94C3-25AB7F125B4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

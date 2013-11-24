@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="02586C23-DAF4-FE1B-C475-4B3280503AD0" directorySegmentName="seg_0" name="merchandise">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>sent by customer(sender). Monitering all the time during transportation.</commentInRDBMS>
+<generatorID>55FB1380-EA64-1C4F-CE55-FFC1DF99D6BF</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pkName>merchandise PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="merchandise_name" id="0922DC60-6158-9E21-6A55-F159D515A07A">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>merchandise number</commentInRDBMS>
+<generatorID>8B09FB33-9D09-DB93-F04B-1AE27D7CC114</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="tag_num" id="1AB38F4C-4093-CF3A-03A0-A55E4FDE3F9A">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<commentInRDBMS>FKey</commentInRDBMS>
+<generatorID>5D136705-95B1-4B7F-A4FB-02F76E877BF7</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<delegate>0DBB7B8B-4E9C-6AE5-94B5-002350BA2EF0</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81417F61-A8D3-AB19-7F7A-8409AD3BA48B" referredColumn="0DBB7B8B-4E9C-6AE5-94B5-002350BA2EF0"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="order_num" id="E74C64F8-A6E7-8174-2D4F-E121D516EEAE">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<commentInRDBMS>FKey&lt;br/&gt;</commentInRDBMS>
+<generatorID>379EE9FE-FCD6-9710-73B4-4E316626DBF8</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<delegate>4A3A3FDC-94C0-64FC-5B4B-862ECFFA11AF</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F9C86665-B44B-D7D8-E6F5-A8184932516C" referredColumn="4A3A3FDC-94C0-64FC-5B4B-862ECFFA11AF"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="weight" id="8DEA6F87-29D6-9E22-026C-FCA6229F74BA">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<commentInRDBMS>norm of merchandise</commentInRDBMS>
+<generatorID>1A6268B3-3FAF-24EA-BDB5-716A51EF8CB3</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="heigh" id="650B9E38-5B31-B696-5FAF-899012127791">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<commentInRDBMS>norm of merchandise</commentInRDBMS>
+<generatorID>C9E16CA0-5EA2-0742-A4BE-908B1363BB4E</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="order_date" id="D5A8FD1B-9F25-996F-A0F8-E1288778E8D2">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>when the order is created</commentInRDBMS>
+<generatorID>5AF932AA-CB11-2D00-C884-D1F7D68186F2</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="BB7D515D-9B99-8A59-5FD6-3259664142AA" name="merchandise PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>34116987-1464-43E2-42F2-C2A7A5DCA8DC</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0922DC60-6158-9E21-6A55-F159D515A07A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="0251CC73-C82F-BE2A-5BEF-DA807195AD70" name="merchandise__IDX_tag">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="1AB38F4C-4093-CF3A-03A0-A55E4FDE3F9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="5CAC0AA2-76CE-5CEE-52F9-238BB73C2ABC" name="merchandise__IDX_order">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="E74C64F8-A6E7-8174-2D4F-E121D516EEAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="47E354D2-BE6A-A182-33BB-392B9052C4B8" name="notify">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<generatorID>E353DBA6-0E8A-CAB4-A393-2C81FD30CF13</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="1AB38F4C-4093-CF3A-03A0-A55E4FDE3F9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6F9E6AAB-7060-DB30-D7AA-3B0313A26400" name="orderv1">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<generatorID>EFDADF80-4BCF-58C0-B23F-9F2334EC8A10</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="E74C64F8-A6E7-8174-2D4F-E121D516EEAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

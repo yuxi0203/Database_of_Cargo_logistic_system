@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.DataFlowDesign>
+   <object objectType="ExtAgent" objectID="0357E674-CA39-9C51-ED01-8ACB0B1AF0AD" name="" seqName="seg_0"/>
+   <object objectType="ExtAgent" objectID="A5DEEB1F-BEAB-527A-BAB7-95BEC9859A43" name="" seqName="seg_0"/>
+   <object objectType="ExtAgent" objectID="D60D09E9-5887-AEB1-8D51-382C4076064A" name="" seqName="seg_0"/>
+   <object objectType="ExtAgent" objectID="E970B318-AEFD-A41E-DEFC-DE394D22EE9D" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="1CB36D15-6D26-CD10-5445-A7FB427EDB35" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="50983366-3334-25D9-B5B1-F7AE0930788F" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="5522280A-AE15-8AC8-C378-E99F4604BDA3" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="709811E3-4AE6-41BF-8257-0229813B7715" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="9FE73BA1-03AE-0770-7E65-BE4FC65237FE" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="AE92D988-06ED-BEFB-D840-DBE29B9D025D" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="B0545D62-20CC-27AB-E205-FDEE5CE69609" name="" seqName="seg_0"/>
+   <object objectType="Process" objectID="F41A3382-65F9-1E62-005D-7D2C9341E614" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="0A0546A4-909B-6FED-C517-3D900ADD2AEC" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="2BBF48BC-6FF0-3B1D-BBBB-C80D0494D38D" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="2D0F1CD5-9BF0-7AF4-EFD2-5C609F83E6ED" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="2D6A1B8F-BE19-FEF6-4AE0-6908B75A7205" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="60DE7F44-69AE-22B8-F51A-CEF8136BBA89" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="6D1FF022-6CF8-5F0D-658D-F43ECC8D7AAF" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="70C8FF8C-59B0-6D0F-9FD5-4C99E1CC38DD" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="74368606-C95C-8ABC-CCEA-5D884A9D5546" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="76CEF0C9-A9FB-46C9-AD3A-A6B8C9B4FED1" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="8B0EC220-697F-0B01-A1C1-2079BE7D03D7" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="8DB685BA-BAFC-DF3A-7FCF-5B3C8FF4A253" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="915FDFC6-2754-BA56-612C-6240EB150A9F" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="952379BE-D42B-E905-D40A-6C7E8540FC4A" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="B1240DC2-E984-5B83-C3B7-602028B6AD14" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="B68987A6-2A11-9F2E-E0C4-D5280D53D268" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="CEEE1531-C644-D54C-C18D-2946E9A7B0F6" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="E95F8B91-B880-F69F-912C-6A1373C8019D" name="" seqName="seg_0"/>
+   <object objectType="Flow" objectID="FD3DDBC9-FC94-FEB5-0A07-7945DEFD4BF8" name="" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.process.DataFlowDesign>

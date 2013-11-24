@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.process.ProcessModel>
+   <object objectType="InfoStore" objectID="03792B5E-DB56-F5C2-4D64-43AAA7A0FC5B" name="" seqName="seg_0"/>
+   <object objectType="InfoStore" objectID="73CF3611-8744-D8CF-F882-42B7DD27D47F" name="" seqName="seg_0"/>
+   <object objectType="InfoStore" objectID="779FF1C1-70ED-5749-30D4-A5DB15890349" name="" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.process.ProcessModel>

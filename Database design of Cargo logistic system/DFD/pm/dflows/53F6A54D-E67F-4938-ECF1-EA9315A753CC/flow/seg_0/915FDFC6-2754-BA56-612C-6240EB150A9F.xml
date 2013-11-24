@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="Container data" id="915FDFC6-2754-BA56-612C-6240EB150A9F" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-05 15:40:01 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>779FF1C1-70ED-5749-30D4-A5DB15890349</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>5522280A-AE15-8AC8-C378-E99F4604BDA3</sourceProcessObject>
+<targetProcessObject>779FF1C1-70ED-5749-30D4-A5DB15890349</targetProcessObject>
+</Flow>

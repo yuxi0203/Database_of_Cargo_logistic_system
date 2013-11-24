@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="55FB1380-EA64-1C4F-CE55-FFC1DF99D6BF" directorySegmentName="seg_0" name="merchandise">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<commentInRDBMS>sent by customer(sender). Monitering all the time during transportation.</commentInRDBMS>
+<generatorID>B4B6C4AF-1EDA-DB16-B984-618AC65B5A3D</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<pkName>merchandise PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>属性</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="merchandise_name" id="8B09FB33-9D09-DB93-F04B-1AE27D7CC114">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>B7325881-3C97-8AAE-1F2A-B548C4880E5F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<commentInRDBMS>merchandise number</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="tag_num" id="5D136705-95B1-4B7F-A4FB-02F76E877BF7">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 14:36:27 UTC</createdTime>
+<generatorID>E353DBA6-0E8A-CAB4-A393-2C81FD30CF13</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<referedAttribute>39DC7C91-B78A-3E99-84C3-7B955F6E1A28</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<commentInRDBMS>FKey</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="order_num" id="379EE9FE-FCD6-9710-73B4-4E316626DBF8">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-18 22:27:36 UTC</createdTime>
+<generatorID>EFDADF80-4BCF-58C0-B23F-9F2334EC8A10</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<referedAttribute>DC8DD97C-1667-AC58-7CD4-35360C201C52</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<commentInRDBMS>FKey&lt;br/&gt;</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="weight" id="1A6268B3-3FAF-24EA-BDB5-716A51EF8CB3">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-18 22:32:42 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<commentInRDBMS>norm of merchandise</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="heigh" id="C9E16CA0-5EA2-0742-A4BE-908B1363BB4E">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-18 22:32:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<commentInRDBMS>norm of merchandise</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="order_date" id="AB234408-114A-37EC-4819-3935E8B95D89">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:11:11 UTC</createdTime>
+<generatorID>D5A8FD1B-9F25-996F-A0F8-E1288778E8D2</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<commentInRDBMS>when the order is created</commentInRDBMS>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="34116987-1464-43E2-42F2-C2A7A5DCA8DC" name="merchandise PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:41:20 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8B09FB33-9D09-DB93-F04B-1AE27D7CC114</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

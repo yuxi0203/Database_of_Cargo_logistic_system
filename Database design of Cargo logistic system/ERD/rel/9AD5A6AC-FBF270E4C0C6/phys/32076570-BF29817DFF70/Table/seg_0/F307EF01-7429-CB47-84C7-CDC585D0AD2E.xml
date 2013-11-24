@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="steadable_equipment" id="F307EF01-7429-CB47-84C7-CDC585D0AD2E" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<logging>YES</logging>
+<user>MDSYS</user>
+<columnProxies>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="steadable_num" id="089099E1-E1DB-2BB3-2AC3-2BEB99CEDFDC">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="address" id="74F6E07B-E632-5571-3CF9-B9A20B1FBCC6">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="ip_address" id="84A3367C-C28A-D3FB-9A70-B3746CA6BED1">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="sys_num" id="8638431F-62FD-38B0-94C3-25AB7F125B4B">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy class="oracle.dbtools.crest.model.design.storage.oracle.v11g.ColumnProxyOraclev11g" name="manu_date" id="A0010613-1434-2B16-8E47-01254FAC0212">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="steadable_equipment__IDX" id="2DFA241E-8DA1-20DA-1739-4F5157E04E02">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:47:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<user>MDSYS</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Relation_7" id="442BB279-98A2-4BB7-E8A2-E78481A4C2F0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="steadable_equipment PK" id="C44761A3-83D9-3834-DE77-11F1A143B912">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:20:44 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

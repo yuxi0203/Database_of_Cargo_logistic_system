@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="send electronic signal" id="74368606-C95C-8ABC-CCEA-5D884A9D5546" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-05 05:45:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>B0545D62-20CC-27AB-E205-FDEE5CE69609</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>A5DEEB1F-BEAB-527A-BAB7-95BEC9859A43</sourceProcessObject>
+<targetProcessObject>B0545D62-20CC-27AB-E205-FDEE5CE69609</targetProcessObject>
+</Flow>

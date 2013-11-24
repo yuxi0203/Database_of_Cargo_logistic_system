@@ -1,0 +1,806 @@
+-- 生成者Oracle SQL Developer Data Modeler 3.1.4.710
+--   时间:        2013-04-18 16:17:13 EDT
+--   站点:      Oracle Database 11g
+--   类型:      Oracle Database 11g
+
+
+
+DROP VIEW V_System 
+;
+DROP VIEW V_customer 
+;
+DROP VIEW V_employee 
+;
+DROP VIEW V_merchandise 
+;
+DROP VIEW V_order 
+;
+DROP VIEW V_portable_equipment 
+;
+DROP VIEW V_steadable_equipment 
+;
+DROP VIEW V_tag 
+;
+DROP VIEW V_wire_read 
+;
+DROP VIEW V_wireless_read 
+;
+DROP TABLE System CASCADE CONSTRAINTS 
+;
+DROP TABLE customer CASCADE CONSTRAINTS 
+;
+DROP TABLE employee CASCADE CONSTRAINTS 
+;
+DROP TABLE merchandise CASCADE CONSTRAINTS 
+;
+DROP TABLE "order" CASCADE CONSTRAINTS 
+;
+DROP TABLE pro_equip CASCADE CONSTRAINTS 
+;
+DROP TABLE ste_equip CASCADE CONSTRAINTS 
+;
+DROP TABLE tag CASCADE CONSTRAINTS 
+;
+DROP TABLE wire_read CASCADE CONSTRAINTS 
+;
+DROP TABLE wireless_read CASCADE CONSTRAINTS 
+;
+CREATE TABLE System 
+    ( 
+     num VARCHAR2 (10)  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE System IS 'System info: other search engine'
+;
+
+
+ALTER TABLE System 
+    ADD CONSTRAINT System_PK PRIMARY KEY ( num ) ;
+
+
+
+CREATE TABLE customer 
+    ( 
+     SSN VARCHAR2 (9)  NOT NULL , 
+     sex CHAR (1 CHAR) , 
+     address LONG  NOT NULL , 
+     phone_num NUMBER (10)  NOT NULL , 
+     AUD_Regi_TMSTP TIMESTAMP WITH LOCAL TIME ZONE  NOT NULL , 
+     order_num VARCHAR2 (15)  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE customer IS 'This entity is constitute by sender and receiver'
+;
+
+
+COMMENT ON COLUMN customer.SSN IS 'social security number' 
+;
+
+COMMENT ON COLUMN customer.address IS 'where the customer live' 
+;
+
+COMMENT ON COLUMN customer.phone_num IS 'Cellphone numer' 
+;
+CREATE UNIQUE INDEX customer_order_num_IDX ON customer 
+    ( 
+     order_num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE customer 
+    ADD CONSTRAINT customer_PK PRIMARY KEY ( SSN ) ;
+
+
+
+CREATE TABLE employee 
+    ( 
+     num VARCHAR2 (20)  NOT NULL , 
+     firstname CHAR  NOT NULL , 
+     sex CHAR (1 CHAR) , 
+     address CHAR  NOT NULL , 
+     SSN VARCHAR2  NOT NULL , 
+     por_equip_num VARCHAR2 (20)  NOT NULL , 
+     lastname LONG  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE employee IS 'employe could use portable equipment to supervise merchandise through RFID tag'
+;
+
+
+COMMENT ON COLUMN employee.num IS 'identify each employee, this is unique
+' 
+;
+
+COMMENT ON COLUMN employee.address IS 'address of emplyee' 
+;
+
+COMMENT ON COLUMN employee.SSN IS 'social security number ' 
+;
+CREATE UNIQUE INDEX employee_por_equip_num_IDX ON employee 
+    ( 
+     por_equip_num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE employee 
+    ADD CONSTRAINT employee_PK PRIMARY KEY ( num ) ;
+
+
+
+CREATE TABLE merchandise 
+    ( 
+     Num VARCHAR2 (20)  NOT NULL , 
+     tag_Num VARCHAR2 (20)  NOT NULL , 
+     order_num VARCHAR2 (15)  NOT NULL , 
+     weight NUMBER (4,2) , 
+     heigh NUMBER (4,2) , 
+     order_date DATE 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE merchandise IS 'sent by customer(sender). Monitering all the time during transportation.'
+;
+
+
+COMMENT ON COLUMN merchandise.Num IS 'merchandise number' 
+;
+
+COMMENT ON COLUMN merchandise.tag_Num IS 'FKey' 
+;
+
+COMMENT ON COLUMN merchandise.order_num IS 'FKey
+' 
+;
+
+COMMENT ON COLUMN merchandise.weight IS 'norm of merchandise' 
+;
+
+COMMENT ON COLUMN merchandise.heigh IS 'norm of merchandise' 
+;
+
+COMMENT ON COLUMN merchandise.order_date IS 'when the order is created' 
+;
+CREATE UNIQUE INDEX merchan_tag_Num_IDX ON merchandise 
+    ( 
+     tag_Num ASC 
+    ) 
+    LOGGING 
+;
+CREATE UNIQUE INDEX merchan_order_num_IDX ON merchandise 
+    ( 
+     order_num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE merchandise 
+    ADD CONSTRAINT merchan_PK PRIMARY KEY ( Num ) ;
+
+
+
+CREATE TABLE "order" 
+    ( 
+     customer_SSN VARCHAR2 (9)  NOT NULL , 
+     num VARCHAR2 (15)  NOT NULL , 
+     merchan_Num VARCHAR2 (20)  NOT NULL , 
+     order_date DATE  NOT NULL , 
+     order_ETA DATE , 
+     "receiver name" CHAR (10)  NOT NULL , 
+     "destination address" LONG  NOT NULL , 
+     receiver_phone NUMBER (10)  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE "order" IS 'Customer(sender) creates order, one order can have several merchandises to send.'
+;
+
+
+COMMENT ON COLUMN "order".customer_SSN IS 'PKey' 
+;
+
+COMMENT ON COLUMN "order".num IS 'the number of order list' 
+;
+
+COMMENT ON COLUMN "order".merchan_Num IS 'PKey' 
+;
+
+COMMENT ON COLUMN "order"."receiver name" IS 'receiver customer name' 
+;
+
+COMMENT ON COLUMN "order"."destination address" IS 'address of receiver' 
+;
+CREATE UNIQUE INDEX order_customer_SSN_IDX ON "order" 
+    ( 
+     customer_SSN ASC 
+    ) 
+    LOGGING 
+;
+CREATE UNIQUE INDEX order_merchan_Num_IDX ON "order" 
+    ( 
+     merchan_Num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE "order" 
+    ADD CONSTRAINT order_PK PRIMARY KEY ( num ) ;
+
+
+
+CREATE TABLE pro_equip 
+    ( 
+     num VARCHAR2 (20)  NOT NULL , 
+     brand CHAR (20 CHAR)  NOT NULL , 
+     manu_date DATE  NOT NULL , 
+     employee_num VARCHAR2 (20)  NOT NULL , 
+     System_num VARCHAR2 (10)  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE pro_equip IS 'reader equipment has two kinds: portable equipment and steadable equipment'
+;
+
+
+COMMENT ON COLUMN pro_equip.num IS 'equp_num is unique number of portable equipment' 
+;
+
+COMMENT ON COLUMN pro_equip.brand IS 'by which company manufactured' 
+;
+
+COMMENT ON COLUMN pro_equip.manu_date IS 'date when manufactated' 
+;
+
+COMMENT ON COLUMN pro_equip.employee_num IS 'FKey' 
+;
+CREATE UNIQUE INDEX por_equip_employee_num_IDX ON pro_equip 
+    ( 
+     employee_num ASC 
+    ) 
+    LOGGING 
+;
+CREATE INDEX por_equip_System_num_IDX ON pro_equip 
+    ( 
+     System_num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE pro_equip 
+    ADD CONSTRAINT por_equip_PK PRIMARY KEY ( num ) ;
+
+
+
+CREATE TABLE ste_equip 
+    ( 
+     address LONG  NOT NULL , 
+     num VARCHAR2 (20)  NOT NULL , 
+     ip_address VARCHAR2 (15)  NOT NULL , 
+     manu_date DATE  NOT NULL , 
+     System_num VARCHAR2 (10)  NOT NULL 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE ste_equip IS 'reader equipment has two kinds: portable equipment and steadable equipment'
+;
+
+
+COMMENT ON COLUMN ste_equip.address IS 'address where it located
+' 
+;
+
+COMMENT ON COLUMN ste_equip.ip_address IS 'special IP address of steadable equipment' 
+;
+
+COMMENT ON COLUMN ste_equip.manu_date IS 'when this equipment manufactured' 
+;
+CREATE INDEX ste_equip_System_num_IDX ON ste_equip 
+    ( 
+     System_num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE ste_equip 
+    ADD CONSTRAINT ste_equip_PK PRIMARY KEY ( num ) ;
+
+
+
+CREATE TABLE tag 
+    ( 
+     Num VARCHAR2 (20)  NOT NULL , 
+     temperature NUMBER (3,2) , 
+     humidity NUMBER (3,2) , 
+     safty CHAR (1) , 
+     merchan_Num VARCHAR2 (20)  NOT NULL , 
+     last_dect_TMSTP DATE , 
+     tag_ETA DATE 
+    ) 
+    LOGGING 
+;
+
+
+
+COMMENT ON TABLE tag IS 'RFID tag, contains a lot of safty info. Tags will be connected when passes through the steadable equipment or scaned by portable equipment which is used by employee.'
+;
+
+
+COMMENT ON COLUMN tag.Num IS 'special number of RFID tag' 
+;
+
+COMMENT ON COLUMN tag.temperature IS 'detection info from sensor' 
+;
+
+COMMENT ON COLUMN tag.humidity IS 'detection info from sensor' 
+;
+
+COMMENT ON COLUMN tag.safty IS 'detection info from sensor' 
+;
+
+COMMENT ON COLUMN tag.merchan_Num IS 'detection info from sensor' 
+;
+
+COMMENT ON COLUMN tag.tag_ETA IS 'estimated time of arrival' 
+;
+CREATE UNIQUE INDEX tag_merchan_Num_IDX ON tag 
+    ( 
+     merchan_Num ASC 
+    ) 
+    LOGGING 
+;
+
+ALTER TABLE tag 
+    ADD CONSTRAINT tag_PK PRIMARY KEY ( Num ) ;
+
+
+
+CREATE TABLE wire_read 
+    ( 
+     ste_equip_num VARCHAR2 (20)  NOT NULL , 
+     tag_Num VARCHAR2 (20)  NOT NULL , 
+     AUD_Scan_TMSTP DATE 
+    ) 
+    LOGGING 
+;
+
+
+
+ALTER TABLE wire_read 
+    ADD CONSTRAINT wire_read_PK PRIMARY KEY ( ste_equip_num, tag_Num ) ;
+
+
+
+CREATE TABLE wireless_read 
+    ( 
+     por_equip_num VARCHAR2 (20)  NOT NULL , 
+     tag_Num VARCHAR2 (20)  NOT NULL , 
+     AUD_Scan_TMSTP DATE 
+    ) 
+    LOGGING 
+;
+
+
+
+ALTER TABLE wireless_read 
+    ADD CONSTRAINT wireless_read_PK PRIMARY KEY ( por_equip_num, tag_Num ) ;
+
+
+
+
+ALTER TABLE customer 
+    ADD CONSTRAINT customer_order_FK FOREIGN KEY 
+    ( 
+     order_num
+    ) 
+    REFERENCES "order" 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE employee 
+    ADD CONSTRAINT employee_por_equip_FK FOREIGN KEY 
+    ( 
+     por_equip_num
+    ) 
+    REFERENCES pro_equip 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE merchandise 
+    ADD CONSTRAINT merchan_order_FK FOREIGN KEY 
+    ( 
+     order_num
+    ) 
+    REFERENCES "order" 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE merchandise 
+    ADD CONSTRAINT merchan_tag_FK FOREIGN KEY 
+    ( 
+     tag_Num
+    ) 
+    REFERENCES tag 
+    ( 
+     Num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE "order" 
+    ADD CONSTRAINT order_customer_FK FOREIGN KEY 
+    ( 
+     customer_SSN
+    ) 
+    REFERENCES customer 
+    ( 
+     SSN
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE "order" 
+    ADD CONSTRAINT order_merchan_FK FOREIGN KEY 
+    ( 
+     merchan_Num
+    ) 
+    REFERENCES merchandise 
+    ( 
+     Num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE pro_equip 
+    ADD CONSTRAINT por_equip_System_FK FOREIGN KEY 
+    ( 
+     System_num
+    ) 
+    REFERENCES System 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE pro_equip 
+    ADD CONSTRAINT por_equip_employee_FK FOREIGN KEY 
+    ( 
+     employee_num
+    ) 
+    REFERENCES employee 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE ste_equip 
+    ADD CONSTRAINT ste_equip_System_FK FOREIGN KEY 
+    ( 
+     System_num
+    ) 
+    REFERENCES System 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE tag 
+    ADD CONSTRAINT tag_merchan_FK FOREIGN KEY 
+    ( 
+     merchan_Num
+    ) 
+    REFERENCES merchandise 
+    ( 
+     Num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE wire_read 
+    ADD CONSTRAINT wire_read_ste_equip_FK FOREIGN KEY 
+    ( 
+     ste_equip_num
+    ) 
+    REFERENCES ste_equip 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE wire_read 
+    ADD CONSTRAINT wire_read_tag_FK FOREIGN KEY 
+    ( 
+     tag_Num
+    ) 
+    REFERENCES tag 
+    ( 
+     Num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE wireless_read 
+    ADD CONSTRAINT wireless_read_por_equip_FK FOREIGN KEY 
+    ( 
+     por_equip_num
+    ) 
+    REFERENCES pro_equip 
+    ( 
+     num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+
+ALTER TABLE wireless_read 
+    ADD CONSTRAINT wireless_read_tag_FK FOREIGN KEY 
+    ( 
+     tag_Num
+    ) 
+    REFERENCES tag 
+    ( 
+     Num
+    ) 
+    ON DELETE CASCADE 
+    NOT DEFERRABLE 
+;
+
+CREATE OR REPLACE VIEW V_System ( num )
+ AS SELECT
+    num
+ FROM 
+    System ;
+
+
+
+CREATE OR REPLACE VIEW V_customer ( SSN,
+    sex,
+    address,
+    phone_num,
+    AUD_Regi_TMSTP,
+    order_num )
+ AS SELECT
+    SSN,
+    sex,
+    address,
+    phone_num,
+    AUD_Regi_TMSTP,
+    order_num
+ FROM 
+    customer ;
+
+
+
+CREATE OR REPLACE VIEW V_employee ( num,
+    firstname,
+    sex,
+    address,
+    SSN,
+    por_equip_num,
+    lastname )
+ AS SELECT
+    num,
+    firstname,
+    sex,
+    address,
+    SSN,
+    por_equip_num,
+    lastname
+ FROM 
+    employee ;
+
+
+
+CREATE OR REPLACE VIEW V_merchandise ( Num,
+    tag_Num,
+    order_num,
+    weight,
+    heigh,
+    order_date )
+ AS SELECT
+    Num,
+    tag_Num,
+    order_num,
+    weight,
+    heigh,
+    order_date
+ FROM 
+    merchandise ;
+
+
+
+CREATE OR REPLACE VIEW V_order ( customer_SSN,
+    num,
+    merchan_Num,
+    order_date,
+    order_ETA,
+    "receiver name",
+    "destination address",
+    receiver_phone )
+ AS SELECT
+    customer_SSN,
+    num,
+    merchan_Num,
+    order_date,
+    order_ETA,
+    "receiver name",
+    "destination address",
+    receiver_phone
+ FROM 
+    "order" ;
+
+
+
+CREATE OR REPLACE VIEW V_portable_equipment ( num,
+    brand,
+    manu_date,
+    employee_num,
+    System_num )
+ AS SELECT
+    num,
+    brand,
+    manu_date,
+    employee_num,
+    System_num
+ FROM 
+    pro_equip ;
+
+
+
+CREATE OR REPLACE VIEW V_steadable_equipment ( address,
+    num,
+    ip_address,
+    manu_date,
+    System_num )
+ AS SELECT
+    address,
+    num,
+    ip_address,
+    manu_date,
+    System_num
+ FROM 
+    ste_equip ;
+
+
+
+CREATE OR REPLACE VIEW V_tag ( Num,
+    temperature,
+    humidity,
+    safty,
+    merchan_Num,
+    last_dect_TMSTP,
+    tag_ETA )
+ AS SELECT
+    Num,
+    temperature,
+    humidity,
+    safty,
+    merchan_Num,
+    last_dect_TMSTP,
+    tag_ETA
+ FROM 
+    tag ;
+
+
+
+CREATE OR REPLACE VIEW V_wire_read ( ste_equip_num,
+    tag_Num,
+    AUD_Scan_TMSTP )
+ AS SELECT
+    ste_equip_num,
+    tag_Num,
+    AUD_Scan_TMSTP
+ FROM 
+    wire_read ;
+
+
+
+CREATE OR REPLACE VIEW V_wireless_read ( por_equip_num,
+    tag_Num,
+    AUD_Scan_TMSTP )
+ AS SELECT
+    por_equip_num,
+    tag_Num,
+    AUD_Scan_TMSTP
+ FROM 
+    wireless_read ;
+
+
+
+
+
+-- Oracle SQL Developer Data Modeler 概要报告: 
+-- 
+-- CREATE TABLE                            10
+-- CREATE INDEX                            10
+-- ALTER TABLE                             24
+-- CREATE VIEW                             10
+-- CREATE PACKAGE                           0
+-- CREATE PACKAGE BODY                      0
+-- CREATE PROCEDURE                         0
+-- CREATE FUNCTION                          0
+-- CREATE TRIGGER                           0
+-- ALTER TRIGGER                            0
+-- CREATE STRUCTURED TYPE                   0
+-- CREATE COLLECTION TYPE                   0
+-- CREATE CLUSTER                           0
+-- CREATE CONTEXT                           0
+-- CREATE DATABASE                          0
+-- CREATE DIMENSION                         0
+-- CREATE DIRECTORY                         0
+-- CREATE DISK GROUP                        0
+-- CREATE ROLE                              0
+-- CREATE ROLLBACK SEGMENT                  0
+-- CREATE SEQUENCE                          0
+-- CREATE MATERIALIZED VIEW                 0
+-- CREATE SYNONYM                           0
+-- CREATE TABLESPACE                        0
+-- CREATE USER                              0
+-- 
+-- DROP TABLESPACE                          0
+-- DROP DATABASE                            0
+-- 
+-- ERRORS                                   0
+-- WARNINGS                                 0

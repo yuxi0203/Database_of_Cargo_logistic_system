@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="signature data" id="2BBF48BC-6FF0-3B1D-BBBB-C80D0494D38D" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-05 05:32:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>73CF3611-8744-D8CF-F882-42B7DD27D47F</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>AE92D988-06ED-BEFB-D840-DBE29B9D025D</sourceProcessObject>
+<targetProcessObject>73CF3611-8744-D8CF-F882-42B7DD27D47F</targetProcessObject>
+</Flow>

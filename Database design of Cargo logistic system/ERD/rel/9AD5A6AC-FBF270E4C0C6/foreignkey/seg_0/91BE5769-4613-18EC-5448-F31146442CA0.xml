@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="91BE5769-4613-18EC-5448-F31146442CA0" directorySegmentName="seg_0" name="wire_Read">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<generatorID>FA7575C2-1C26-A7E4-18EB-980A6FA87315</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<containerWithKeyObject>FCE94C0C-6AC6-6753-5DB0-F7B28D3B7280</containerWithKeyObject>
+<deleteRule>CASCADE</deleteRule>
+<localFKIndex>FF3D31EC-A036-A75D-4746-57F9C7CCC3A3</localFKIndex>
+<keyObject>C44761A3-83D9-3834-DE77-11F1A143B912</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

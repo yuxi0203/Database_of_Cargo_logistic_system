@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="provide inquire info" id="60DE7F44-69AE-22B8-F51A-CEF8136BBA89" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-05 15:41:06 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>50983366-3334-25D9-B5B1-F7AE0930788F</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>true</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>73CF3611-8744-D8CF-F882-42B7DD27D47F</sourceProcessObject>
+<targetProcessObject>50983366-3334-25D9-B5B1-F7AE0930788F</targetProcessObject>
+</Flow>

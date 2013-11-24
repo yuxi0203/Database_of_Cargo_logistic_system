@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ExternalAgent class="oracle.dbtools.crest.model.design.process.ExternalAgent" name="sensor" id="E970B318-AEFD-A41E-DEFC-DE394D22EE9D" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-03 20:57:15 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<fieldSeparator>,</fieldSeparator>
+<fileType>CSV</fileType>
+<selfDescribing>false</selfDescribing>
+<skipRecords>0</skipRecords>
+<transfertype>Full Refresh</transfertype>
+<type>3</type>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+</fonts>
+</ExternalAgent>

@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="80B0922D-07FB-BDEA-D5C4-74D882EFB6B3" directorySegmentName="seg_0" name="order">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<commentInRDBMS>Customer(sender) creates order, one order can have several merchandises to send.</commentInRDBMS>
+<generatorID>C59419E5-A292-02A8-29FC-EB3030D43E19</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pkName>order PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="social_num" id="A4B1C0BB-6C92-9AC0-1BFA-0FEBE5EC58FC">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:40:59 UTC</createdTime>
+<commentInRDBMS>PKey</commentInRDBMS>
+<generatorID>860809BF-3404-3066-43BB-B3F61EC8567D</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<delegate>004E3CF7-9C40-CD02-5D46-4E96ECFC77F5</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2583E92B-4C1C-3BFC-A154-7D21B69BB125" referredColumn="004E3CF7-9C40-CD02-5D46-4E96ECFC77F5"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="order_num" id="4A3A3FDC-94C0-64FC-5B4B-862ECFFA11AF">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<commentInRDBMS>the number of order list</commentInRDBMS>
+<generatorID>DC8DD97C-1667-AC58-7CD4-35360C201C52</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="merchandise_name" id="BBB8708B-C5C3-AAEC-32F4-26FEB0DB8975">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<commentInRDBMS>PKey</commentInRDBMS>
+<generatorID>B3129C2F-FBE7-04FE-2DC9-9AB8C8838669</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<delegate>0922DC60-6158-9E21-6A55-F159D515A07A</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D845BEB3-B18B-583A-16DE-8387A24ED9B2" referredColumn="0922DC60-6158-9E21-6A55-F159D515A07A"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="order_date" id="2E8A11BD-6045-B041-AEA5-800883A6AC9A">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<generatorID>3FA91DD8-6FFC-C0FB-09E9-A74AD47F2933</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="order_ETA" id="E218069F-BD5C-3807-7640-F5EA15E75E7F">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<comment>estimated time of arrival</comment>
+<generatorID>AA160050-2858-3625-D2E6-52C5392E3477</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="receiver name" id="B0728D36-87A7-EF37-B19E-E57339706E5F">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<commentInRDBMS>receiver customer name</commentInRDBMS>
+<generatorID>12C828D1-AE1E-1B79-10CB-CB10EFC757BB</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="destination address" id="CFC5732E-FE82-5ABA-C80F-668B9290200C">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<commentInRDBMS>address of receiver</commentInRDBMS>
+<generatorID>B8531445-E1BC-FD20-D503-E110AD355462</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="receiver_phone" id="26DAFCA1-C955-6AF2-E728-6D100B92F64F">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<generatorID>D563FEA4-F2D8-D85C-3E61-A076F2094063</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="65EB52DB-D11D-B0C4-684E-A332DC0CC7DA" name="order PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<generatorID>B01CB281-0999-9702-549B-7EBB17492895</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="4A3A3FDC-94C0-64FC-5B4B-862ECFFA11AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="C0CEE733-C0D5-E672-7790-0A7769C6C122" name="order__IDX_customer">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 22:54:32 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="A4B1C0BB-6C92-9AC0-1BFA-0FEBE5EC58FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="4AA96F7E-583F-DA71-0ACB-50322C1830CE" name="order__IDX_merchandise">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-31 23:53:52 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="BBB8708B-C5C3-AAEC-32F4-26FEB0DB8975"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="8D4C9960-3137-C0F5-FD66-E9D4D5AC4B2F" name="order">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:40:59 UTC</createdTime>
+<generatorID>453C3D56-A212-E609-5ABC-8FD4EEBE7FC5</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="A4B1C0BB-6C92-9AC0-1BFA-0FEBE5EC58FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="16BFD5FD-6DBC-EA46-952D-9192646FDD85" name="orderv1">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:44:06 UTC</createdTime>
+<generatorID>EFDADF80-4BCF-58C0-B23F-9F2334EC8A10</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="BBB8708B-C5C3-AAEC-32F4-26FEB0DB8975"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

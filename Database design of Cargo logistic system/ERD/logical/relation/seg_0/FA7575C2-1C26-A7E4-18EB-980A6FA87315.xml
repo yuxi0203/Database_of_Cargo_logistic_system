@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="wire_Read" id="FA7575C2-1C26-A7E4-18EB-980A6FA87315" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-18 20:32:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3ACA7B6A-98EE-B325-9900-8CEE45968061</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8F6ADBB5-8B98-34FD-4C9B-39063062EF80</targetEntity>
+<transferable>true</transferable>
+</Relation>

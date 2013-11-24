@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<InfoStore class="oracle.dbtools.crest.model.design.process.InfoStore" name="Container_Infodatabase" id="779FF1C1-70ED-5749-30D4-A5DB15890349" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-03 20:59:35 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<rdbmsSite>Oracle Database 11g</rdbmsSite>
+<selfDescribing>false</selfDescribing>
+<skipRecords>0</skipRecords>
+<type>RDBMS</type>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数字</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-1</colorRGB>
+</FontObject>
+</fonts>
+</InfoStore>

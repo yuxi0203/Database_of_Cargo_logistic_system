@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="employee_portable_equipment_FK" id="0EFFF16E-0305-49BB-E70C-C6E34A03A9BB" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 14:55:02 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>51F2EBC1-1192-9E0E-29DA-8794D24C5581</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>7DE80A1B-D7EC-676F-6EB2-6241E3393AB4</targetEntity>
+<transferable>true</transferable>
+</Relation>

@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="F35FCE20-3307-6072-F2FC-C4C65E570C14" directorySegmentName="seg_0" name="V_wire_read">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 01:50:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<userDefined>false</userDefined>
+<validSQL>false</validSQL>
+<parsed>true</parsed>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+</fonts>
+<usedContainers>
+<container containerID="FCE94C0C-6AC6-6753-5DB0-F7B28D3B7280"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="steadable_num" id="51D0F419-3040-AF70-3914-B4E27B8AECC2">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 01:50:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<dataType>VARCHAR2 (20)</dataType>
+<reference>false</reference>
+<referencedColumn>33C1F87A-7E73-0935-1F28-A48D020E3554</referencedColumn>
+<table>FCE94C0C-6AC6-6753-5DB0-F7B28D3B7280</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tag_num" id="E71BE58D-1E3C-033A-CB28-F7BD83F2737D">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 01:50:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<dataType>VARCHAR2 (20)</dataType>
+<reference>false</reference>
+<referencedColumn>6FB66FA2-65D7-1865-E3FB-607B03FB738F</referencedColumn>
+<table>FCE94C0C-6AC6-6753-5DB0-F7B28D3B7280</table>
+</viewElement>
+</viewElements>
+</TableView>

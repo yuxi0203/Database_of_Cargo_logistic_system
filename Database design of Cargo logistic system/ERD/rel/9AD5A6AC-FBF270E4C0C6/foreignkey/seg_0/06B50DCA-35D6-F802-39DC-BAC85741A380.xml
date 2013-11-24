@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" id="06B50DCA-35D6-F802-39DC-BAC85741A380" directorySegmentName="seg_0" name="employee_portable_equipment_FK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:48:11 UTC</createdTime>
+<generatorID>0EFFF16E-0305-49BB-E70C-C6E34A03A9BB</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<containerWithKeyObject>D3525E31-4E60-FEF9-C408-B13EBF3F0C30</containerWithKeyObject>
+<deleteRule>CASCADE</deleteRule>
+<localFKIndex>04BD5099-5252-CF8D-BD96-4AE619D4591F</localFKIndex>
+<keyObject>FD241408-4E2F-447F-3928-817A1F13D57C</keyObject>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+</FKIndexAssociation>

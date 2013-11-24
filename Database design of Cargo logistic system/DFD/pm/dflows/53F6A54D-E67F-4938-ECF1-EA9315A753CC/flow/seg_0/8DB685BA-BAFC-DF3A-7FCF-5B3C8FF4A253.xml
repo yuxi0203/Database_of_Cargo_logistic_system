@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="spreedsheet" id="8DB685BA-BAFC-DF3A-7FCF-5B3C8FF4A253" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-04 00:15:37 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>709811E3-4AE6-41BF-8257-0229813B7715</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>true</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>779FF1C1-70ED-5749-30D4-A5DB15890349</sourceProcessObject>
+<targetProcessObject>709811E3-4AE6-41BF-8257-0229813B7715</targetProcessObject>
+</Flow>

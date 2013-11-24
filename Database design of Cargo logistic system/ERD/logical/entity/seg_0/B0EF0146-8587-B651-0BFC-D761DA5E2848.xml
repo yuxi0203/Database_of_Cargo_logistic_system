@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" id="B0EF0146-8587-B651-0BFC-D761DA5E2848" directorySegmentName="seg_0" name="RFID_tag">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<commentInRDBMS>RFID tag, contains a lot of safty info. Tags will be connected when passes through the steadable equipment or scaned by portable equipment which is used by employee.</commentInRDBMS>
+<generatorID>C3D00082-5CAC-EE9F-B593-756CA4FA5340</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<pkName>tag PK</pkName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>属性</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<attributes>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="tag_num" id="39DC7C91-B78A-3E99-84C3-7B955F6E1A28">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>2687823C-FE0A-270F-1795-2AF2B76DB1C7</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<commentInRDBMS>special number of RFID tag</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="temperature" id="CD4940BC-B2A3-8BA1-7445-DA8ABF248B39">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>C034E012-FF70-EBFD-27DC-533961594C5F</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<commentInRDBMS>detection info from sensor</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="humidity" id="F123654F-C4DB-6103-6103-83800136DB3E">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>E2F578A9-F69A-F8A2-5021-85803F7C6C2D</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<commentInRDBMS>detection info from sensor</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="safty" id="2A1F2E09-3543-91BE-2BBC-679E0BFF3FA1">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:20:27 UTC</createdTime>
+<generatorID>DD72DEA6-AF31-00A8-9053-CCF32205C551</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<commentInRDBMS>detection info from sensor</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="merchandise_name" id="F6094A3A-7AF6-C73E-7DBA-0F4F6DC241DA">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:41:21 UTC</createdTime>
+<generatorID>E353DBA6-0E8A-CAB4-A393-2C81FD30CF13</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<referedAttribute>8B09FB33-9D09-DB93-F04B-1AE27D7CC114</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<commentInRDBMS>detection info from sensor</commentInRDBMS>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="last_dect_TMSTP" id="87FC26FB-C2BF-4899-6DF4-7910EBA66FF0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-03 02:46:46 UTC</createdTime>
+<generatorID>243AA9FF-8868-9EC4-87AF-A58256CC05DF</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+<Attribute class="oracle.dbtools.crest.model.design.logical.Attribute" name="tag_ETA" id="2E4CADB8-0144-7806-8456-E5F158C7C99B">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-03 02:46:46 UTC</createdTime>
+<generatorID>5DDD5F0D-609A-D2A5-A2BF-CB9D3DAC1C90</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<commentInRDBMS>estimated time of arrival</commentInRDBMS>
+</Attribute>
+</attributes>
+<identifiers>
+<identifier class="oracle.dbtools.crest.model.design.logical.CandidateKey" id="A41EB401-BF1C-3DA6-9EAF-A72635034AE7" name="tag PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:41:30 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>39DC7C91-B78A-3E99-84C3-7B955F6E1A28</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

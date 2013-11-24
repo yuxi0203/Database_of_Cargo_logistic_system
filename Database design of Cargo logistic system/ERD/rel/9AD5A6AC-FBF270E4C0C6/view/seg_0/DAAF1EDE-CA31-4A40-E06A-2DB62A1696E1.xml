@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" id="DAAF1EDE-CA31-4A40-E06A-2DB62A1696E1" directorySegmentName="seg_0" name="V_wireless_read">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 01:50:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<userDefined>false</userDefined>
+<validSQL>false</validSQL>
+<parsed>true</parsed>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+</fonts>
+<usedContainers>
+<container containerID="3ACE91B5-4586-0EF7-8975-883CBA49811E"/>
+</usedContainers>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="equp_num" id="D1469006-067C-FBD4-42B3-32166FA8C9E1">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 01:50:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<dataType>VARCHAR2 (20)</dataType>
+<reference>false</reference>
+<referencedColumn>09EA305F-460D-8470-73A1-40CD721E9D19</referencedColumn>
+<table>3ACE91B5-4586-0EF7-8975-883CBA49811E</table>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="tag_num" id="F5E693F9-8CE7-82D0-0E74-7F86C4129F1F">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 01:50:41 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<dataType>VARCHAR2 (20)</dataType>
+<reference>false</reference>
+<referencedColumn>941C988D-DFCF-443E-8446-EEAC18A3BE9F</referencedColumn>
+<table>3ACE91B5-4586-0EF7-8975-883CBA49811E</table>
+</viewElement>
+</viewElements>
+</TableView>

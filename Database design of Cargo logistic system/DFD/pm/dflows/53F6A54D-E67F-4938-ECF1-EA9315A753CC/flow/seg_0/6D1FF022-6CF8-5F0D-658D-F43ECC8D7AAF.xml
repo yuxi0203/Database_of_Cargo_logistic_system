@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="receive 3G signal" id="6D1FF022-6CF8-5F0D-658D-F43ECC8D7AAF" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-05 05:45:09 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>A5DEEB1F-BEAB-527A-BAB7-95BEC9859A43</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>false</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>F41A3382-65F9-1E62-005D-7D2C9341E614</sourceProcessObject>
+<targetProcessObject>A5DEEB1F-BEAB-527A-BAB7-95BEC9859A43</targetProcessObject>
+</Flow>

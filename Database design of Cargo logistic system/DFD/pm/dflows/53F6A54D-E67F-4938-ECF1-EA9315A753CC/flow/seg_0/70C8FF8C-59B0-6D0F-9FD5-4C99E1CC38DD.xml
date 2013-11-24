@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Flow class="oracle.dbtools.crest.model.design.process.Flow" name="Internet data" id="70C8FF8C-59B0-6D0F-9FD5-4C99E1CC38DD" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-04 00:31:14 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<destination>709811E3-4AE6-41BF-8257-0229813B7715</destination>
+<logging>false</logging>
+<opCreate>false</opCreate>
+<opDelete>false</opDelete>
+<opRead>true</opRead>
+<opUpdate>false</opUpdate>
+<sourceProcessObject>03792B5E-DB56-F5C2-4D64-43AAA7A0FC5B</sourceProcessObject>
+<targetProcessObject>709811E3-4AE6-41BF-8257-0229813B7715</targetProcessObject>
+</Flow>

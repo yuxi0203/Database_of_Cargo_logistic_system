@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_AUD_Scan_TMSTP" id="5C684FD0-D29F-01BC-BC54-02865E5AEA46" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 03:36:00 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<body>BEGIN&lt;br/&gt;扫描后&lt;br/&gt;    :new.AUD_Scan_TMSTP := sysdate;&lt;br/&gt;    dbms_output.put_line(&apos;Scan time has been recorded&apos;);&lt;br/&gt;&lt;br/&gt;END;&lt;br/&gt;</body>
+<triggerTime>INSTEAD OF</triggerTime>
+<view>1035EA1C-365E-C6AD-7B12-018B2E21B71D</view>
+</TriggerOraclev10g>

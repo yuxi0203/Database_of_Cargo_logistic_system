@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="readv1" id="09DFBD13-559F-8657-295F-FEBD4C16873A" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 07:24:54 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<engineerTo>
+<item key="9AD5A6AC-3A2B-F890-1DED-FBF270E4C0C6" value="true"/>
+</engineerTo>
+<identifying>true</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>51F2EBC1-1192-9E0E-29DA-8794D24C5581</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CB822A2F-8356-DC3A-09BD-DEDBF4C4A317</targetEntity>
+<transferable>true</transferable>
+</Relation>

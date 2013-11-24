@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DataFlowDesign class="oracle.dbtools.crest.model.design.process.DataFlowDesign" name="Data Flow Diagram_1" id="53F6A54D-E67F-4938-ECF1-EA9315A753CC" mainViewID="E6D78125-EAE8-E648-4D6C-8503D9203C69" topLevel="true">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-03-03 20:39:26 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>project_DFD</ownerDesignName>
+<shouldBeOpen>true</shouldBeOpen>
+<processOrderString>5522280A-AE15-8AC8-C378-E99F4604BDA3,F41A3382-65F9-1E62-005D-7D2C9341E614,1CB36D15-6D26-CD10-5445-A7FB427EDB35,B0545D62-20CC-27AB-E205-FDEE5CE69609,709811E3-4AE6-41BF-8257-0229813B7715,50983366-3334-25D9-B5B1-F7AE0930788F,9FE73BA1-03AE-0770-7E65-BE4FC65237FE,AE92D988-06ED-BEFB-D840-DBE29B9D025D</processOrderString>
+</DataFlowDesign>

@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="" seqName="seg_0"/>
+   <object objectType="TSpace" objectID="3B13B7F3-96E2-2D8D-F6EC-DB3C3ADBA373" name="" seqName="seg_0"/>
+   <object objectType="User" objectID="527301A1-C0BE-BBB3-0B29-DBACC4AAC2F7" name="" seqName="seg_0"/>
+   <object objectType="User" objectID="8893332F-13E5-8F60-7B32-142A56D5BC3C" name="" seqName="seg_0"/>
+   <object objectType="User" objectID="MDSYS" name="" seqName="seg_0"/>
+   <object objectType="User" objectID="PUBLIC" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="02586C23-DAF4-FE1B-C475-4B3280503AD0" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="3ACE91B5-4586-0EF7-8975-883CBA49811E" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="80B0922D-07FB-BDEA-D5C4-74D882EFB6B3" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="82705AD8-1031-D030-112F-9C86D0FEB347" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="84C339E1-E80E-430A-028A-963CF20BB306" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="A61F4118-A3F3-EDD9-3162-C8A6F2D86BB9" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="B0A2A9E2-5BF3-3221-88BF-28B7E08EA075" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="D3525E31-4E60-FEF9-C408-B13EBF3F0C30" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="F307EF01-7429-CB47-84C7-CDC585D0AD2E" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="FCE94C0C-6AC6-6753-5DB0-F7B28D3B7280" name="" seqName="seg_0"/>
+   <object objectType="View" objectID="DAAF1EDE-CA31-4A40-E06A-2DB62A1696E1" name="" seqName="seg_0"/>
+   <object objectType="View" objectID="F35FCE20-3307-6072-F2FC-C4C65E570C14" name="" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="5C684FD0-D29F-01BC-BC54-02865E5AEA46" name="" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="91D9A090-13C2-99B9-E24C-3A007A644707" name="" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="C14D5EC1-5BC3-59BB-F3A3-27B447749AB4" name="" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="D4B36374-D909-F249-736C-D256EF833D75" name="" seqName="seg_0"/>
+   <object objectType="Trigger" objectID="DCF0959F-683B-6C77-7CD8-4CC7E914FF4B" name="" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v11g.StorageDesignOraclev11g>

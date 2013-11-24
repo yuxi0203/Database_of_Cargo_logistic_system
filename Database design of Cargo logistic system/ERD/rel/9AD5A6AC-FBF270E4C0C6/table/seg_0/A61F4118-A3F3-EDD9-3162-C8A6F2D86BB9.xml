@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" id="A61F4118-A3F3-EDD9-3162-C8A6F2D86BB9" directorySegmentName="seg_0" name="portable_equipment">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<commentInRDBMS>reader equipment has two kinds: portable equipment and steadable equipment</commentInRDBMS>
+<generatorID>51F2EBC1-1192-9E0E-29DA-8794D24C5581</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pkName>portable_equipment PK</pkName>
+<fonts>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>标题</foType>
+<fontStyle>1</fontStyle>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>列</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>数据类型</foType>
+<colorRGB>-16744448</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>PK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>FK 元素</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>UK 元素</foType>
+<colorRGB>-16776961</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>非空值</foType>
+<colorRGB>-65536</colorRGB>
+</FontObject>
+<FontObject class="oracle.dbtools.crest.model.design.FontObjectWr">
+<foType>关键字</foType>
+<colorRGB>-16777216</colorRGB>
+</FontObject>
+</fonts>
+<columns>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="equp_num" id="6D4375D8-F852-D0F9-117B-E09E7C823720">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<comment>equp_num is unique number of portable equipment</comment>
+<commentInRDBMS>equp_num is unique number of portable equipment</commentInRDBMS>
+<generatorID>43179C6E-8C0A-8C23-CA3C-1EC7EC65E1FD</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="brand" id="647A40C1-33E3-7154-B5F4-7C38825D7A20">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<comment>by which company manufactured</comment>
+<commentInRDBMS>by which company manufactured</commentInRDBMS>
+<generatorID>D67EDDB9-8668-6F1B-4187-18B75AC9FBEE</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="manu_date" id="6EE9B042-3C47-4DE4-567C-55929EAFE130">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<comment>date when manufactated</comment>
+<commentInRDBMS>date when manufactated</commentInRDBMS>
+<generatorID>EE227B53-C635-3E69-43D4-26854B6019B2</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="Employee_num" id="1D6DF56C-29FF-6CA6-6507-C05B3BD5B668">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:48:11 UTC</createdTime>
+<comment>FKey&lt;br/&gt;</comment>
+<commentInRDBMS>FKey</commentInRDBMS>
+<generatorID>4F89D626-0FAA-3A21-B2B2-EA49D5A1D131</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<delegate>87AF40D3-98CC-9750-F311-6523ECB2F9C3</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DABA7E6-F90A-4FDA-F0B7-71E66333743B" referredColumn="87AF40D3-98CC-9750-F311-6523ECB2F9C3"/>
+</associations>
+</Column>
+<Column class="oracle.dbtools.crest.model.design.relational.Column" name="sys_num" id="6EECA4A0-8D28-11F4-94C9-FCAD49351236">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:54:18 UTC</createdTime>
+<generatorID>AC8C4DA5-67C2-3B24-FF3F-BE2B08863C49</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<delegate>39B715B7-928A-615C-64D0-4AFCF51D4D99</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5E5554E-4EAC-52A8-A7D7-FB15A89AE494" referredColumn="39B715B7-928A-615C-64D0-4AFCF51D4D99"/>
+</associations>
+</Column>
+</columns>
+<indexes>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="FD241408-4E2F-447F-3928-817A1F13D57C" name="portable_equipment PK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-02-15 15:04:55 UTC</createdTime>
+<generatorID>A8DB5C6D-9BA8-FEFD-451D-EB4F90D5FA02</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="6D4375D8-F852-D0F9-117B-E09E7C823720"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="6761671B-3932-D276-B325-F4E17302726B" name="portable_equipment__IDX">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:48:11 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<indexColumnUsage>
+<colUsage columnID="1D6DF56C-29FF-6CA6-6507-C05B3BD5B668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="0B1E4A3A-8CB6-8793-72C0-AFE21DDFFCBE" name="employee_portable_equipment_FK">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:48:11 UTC</createdTime>
+<generatorID>0EFFF16E-0305-49BB-E70C-C6E34A03A9BB</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="1D6DF56C-29FF-6CA6-6507-C05B3BD5B668"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK class="oracle.dbtools.crest.model.design.relational.Index" id="E3EA2620-92D0-A9A5-52A6-6E5095E699AA" name="support">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-05 00:54:18 UTC</createdTime>
+<generatorID>5807E006-52A3-D929-57ED-3C60E3BA4488</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="6EECA4A0-8D28-11F4-94C9-FCAD49351236"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_AUD_Regi_TMSTP" id="DCF0959F-683B-6C77-7CD8-4CC7E914FF4B" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 02:30:19 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<actions>INSERT</actions>
+<body>BEGIN&lt;br/&gt;用户输入后&lt;br/&gt;    :new.AUD_Regi_TMSTP := sysdate;&lt;br/&gt;    dbms_output.put_line(&apos;New register has been approved&apos;);&lt;br/&gt;&lt;br/&gt;END;&lt;br/&gt;</body>
+<triggerTime>INSTEAD OF</triggerTime>
+<owner>527301A1-C0BE-BBB3-0B29-DBACC4AAC2F7</owner>
+<view>DE91BD4B-0E4A-00A9-FAF1-07CB2ADCEDE8</view>
+</TriggerOraclev10g>

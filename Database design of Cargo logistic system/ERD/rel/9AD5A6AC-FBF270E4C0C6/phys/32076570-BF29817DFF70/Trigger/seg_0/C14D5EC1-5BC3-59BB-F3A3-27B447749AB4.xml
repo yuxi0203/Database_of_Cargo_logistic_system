@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="Trg_ETA" id="C14D5EC1-5BC3-59BB-F3A3-27B447749AB4" directorySegmentName="seg_0">
+<createdBy>Xi Yu</createdBy>
+<createdTime>2013-04-01 03:38:40 UTC</createdTime>
+<generatorID>用户生成</generatorID>
+<ownerDesignName>ERD</ownerDesignName>
+<body>BEGIN&lt;br/&gt;tag ETA更新后&lt;br/&gt; Select tag_ETA into V_order FROM tag&lt;br/&gt;    :new.order_ETA := tag_ETA;&lt;br/&gt;    dbms_output.put_line(&apos;ETA has changed&apos;);&lt;br/&gt;&lt;br/&gt;END;&lt;br/&gt;</body>
+<triggerTime>INSTEAD OF</triggerTime>
+<view>E010BE03-FB55-BC32-916B-B643147EB8F0</view>
+</TriggerOraclev10g>
